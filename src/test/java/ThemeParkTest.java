@@ -40,8 +40,23 @@ public class ThemeParkTest {
         themePark.checkIntoWaltzer(customer1);
         themePark.checkIntoWaltzer(customer2);
         themePark.checkIntoWaltzer(customer3);
-//        themePark.checkIntoWaltzer(customer4);
         assertEquals(2, waltzer.getCustomerCount());
+    }
+
+    @Test
+    public void canCheckCustomerIntoBooster(){
+        themePark.checkIntoBooster(customer1);
+        themePark.checkIntoBooster(customer2);
+        themePark.checkIntoBooster(customer3);
+        assertEquals(2, booster.getCustomerCount());
+    }
+
+    @Test
+    public void canCheckCustomerIntoRollcercoaster(){
+        themePark.checkIntoRollercoaster(customer1);
+        themePark.checkIntoRollercoaster(customer2);
+        themePark.checkIntoRollercoaster(customer3);
+        assertEquals(2, rollercoaster.getCustomerCount());
     }
 
     @Test

@@ -17,4 +17,16 @@ public class ThemePark {
             waltzer.checkIn(customer);
         }
     }
+
+    public void checkIntoBooster(Customer customer) {
+        for (Booster booster : this.booster) {
+            booster.checkIn(customer);
+        }
+    }
+
+    public void checkIntoRollercoaster(Customer customer) {
+        for (Rollercoaster rollercoaster : this.rollercoaster) {
+            rollercoaster.checkIn(customer);
+        }
+    }
 }
